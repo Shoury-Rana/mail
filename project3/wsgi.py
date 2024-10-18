@@ -7,16 +7,12 @@ For more information on this file, see
 https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/
 """
 
-import os
 
+import os
 from django.core.wsgi import get_wsgi_application
 
+# Set the environment variable to point to your Django settings
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project3.settings')
 
+# Get the WSGI application callable
 application = get_wsgi_application()
-
-
-# api/wsgi.py
-app = get_wsgi_application()
-# api/settings.py
-WSGI_APPLICATION = 'api.wsgi.app'
