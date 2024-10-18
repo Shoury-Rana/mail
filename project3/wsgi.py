@@ -16,3 +16,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project3.settings')
 
 # Get the WSGI application callable
 application = get_wsgi_application()
+
+app = application
